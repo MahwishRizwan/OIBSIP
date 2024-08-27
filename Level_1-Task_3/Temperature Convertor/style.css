@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, #FF7F50, #6A5ACD);
+}
+
+.heading {
+    padding-bottom: 5rem;
+    font-size: 5rem;
+    color: #DFF2D8;
+}
+
+.temp_container {
+    background: linear-gradient(90deg, #6A5ACD, #FF7F50);
+    border-radius: 1rem;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    height: 50vmin;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 2.5rem;
+    color: #DFF2D8;
+}
+
+.convert_from, .convert_to {
+    padding: 2rem;
+}
+
+.convert {
+    display: flex;
+    height: 20vmin;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+select, input {
+    font-family: monospace;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: .4rem;
+    background: #DFF2D8;
+    color: #297373;
+    border: 2px solid #297373;
+}
+
+select {
+    width: 40%;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    outline: none;
+}
+
+input::placeholder {
+    color: #88292F;
+}
+
+.convert_button {
+    padding: 5rem;
+}
+
+button {
+    font-family: monospace;
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: #DFF2D8;
+    color: #297373;
+    border: 2px solid #297373;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 4rem;
+    }
+    .temp_container {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 3.5rem;
+    }
+    .temp_container {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+    .convert {
+        flex-direction: column;
+        height: auto;
+    }
+    select, input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    .temp_container {
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+    .convert {
+        flex-direction: column;
+        height: auto;
+    }
+    select, input {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .convert_button {
+        padding: 3rem;
+    }
+    button {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 2.5rem;
+        padding-bottom: 3rem;
+    }
+    .temp_container {
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
+    select, input {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
